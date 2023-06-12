@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Project Product Page</title>
+        
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                <img src="./images/main/Clickhouselogo.svg" alt="logo">
+                <nav class="topmenu">
+                    <a class="home current" href="index.html"><span>Главная</span></a>
+                    <a class="catalog" href="catalog.html"><span>Каталог</span></a>
+                    <a class="product" href="product.html"><span>Товар</span></a>
+                    <a class="order" href="order.html"><span>Корзина</span></a>
+                    <a class="contacts" href="contacts.html"><span>Контакты</span></a>
+                </nav>
+    
+                <div class="right_header">
+                    <span>8-800-888-88-88</span>
+                    <button>Заказать звонок</button>
+                </div>
+                <div class="burger">
+                    <img src="./images/burger.png" alt="">
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="container">
+            <section>
+                <div class="p2_middle_wrap">
+                    <div class="p2_middle">
+                        <img src="./images/contacts/cont02.jpg" width="500">
+                        <h5>Наши контакты</h5>
+                        <div class="p2_address">Свяжитесь с нами в удобное для вас время.</div>
+                        <h5>Наш телефон</h5>
+                        <ul class="p2_phone">
+                            <li>&#128222; 8-800-888-88-88</li>
+                        </ul>
+                        <h5>Наши сайт и электронная почта</h5>
+                        <ul class="p2_online">
+                            <li>&#128187; www.sanktsionka.ru</li>
+                            <li>&#9993; sanktsionka@net.ru</li>
+                        </ul>
+                    </div>
+                    <form class="cont_f" method="get" action="#">
+                        <h5>Отправьте нам сообщение</h5>
+                            <div class="text_form">Ваше имя</div>
+                                <input value="fgfdgfdg" class="name_form" type="text" name="Name" placeholder="Имя" required>
+                            <div class="text_form">Ваш имейл</div>
+                                <input value="a@a.ru" class="email_form" type="email" name="E-mail" placeholder="Электронный адрес" required>
+                            <div class="text_form">Ваше сообщение</div>
+                                <textarea class="message_form" placeholder="Введите текст" name="Message"></textarea>
+                                <button class="c_button" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+            <section id="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4ad9a7f817e4b3bb685835b414bad1b8d4fd95c83636743085a8578f1d8a89bc&amp;source=constructor" width="900" height="500" frameborder="0">
+                </iframe>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="container">
+                <div class="top"></div>
+                <nav class="bottommenu">
+                    <a class="home current" href="index.html"><span>Главная</span></a>
+                    <a class="catalog" href="catalog.html"><span>Каталог</span></a>
+                    <a class="product" href="product.html"><span>Товар</span></a>
+                    <a class="order" href="order.html"><span>Корзина</span></a>
+                    <a class="contacts" href="contacts.html"><span>Контакты</span></a>
+                </nav>
+                <p class="copy">&copy; Юлия Перелыгина, 2023 год.</p>
+            </div>
+        </footer>
+
+        <div class="modal__contacts">
+            <div class="close__modal">X</div>
+            <div class="wrapper__contacts">
+                <h3>Успешно отправлено</h3>
+            </div>
+            
+        </div>
+        <div class="menu__burger">
+            <div class="burger__close">X</div>
+            <div class="wrapper__burger">
+                <a class="home current" href="index.html"><span>Главная</span></a>
+                <a class="catalog" href="catalog.html"><span>Каталог</span></a>
+                <a class="product" href="product.html"><span>Товар</span></a>
+                <a class="order" href="order.html"><span>Корзина</span></a>
+                <a class="contacts" href="contacts.html"><span>Контакты</span></a>
+            </div>
+        </div>
+        <script src="js/jquery-3.7.0.min.js"></script>
+        
+        <script src="js/gallery.js"></script>
+        
+        <script src="js/main.js"></script>
+    </body>
+    
+    </html>

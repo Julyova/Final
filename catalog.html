@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Project Catalog Page</title>
+        
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                <img src="./images/main/Clickhouselogo.svg" alt="logo">
+                <nav class="topmenu">
+                    <a class="home current" href="index.html"><span>Главная</span></a>
+                    <a class="catalog" href="catalog.html"><span>Каталог</span></a>
+                    <a class="product" href="product.html"><span>Товар</span></a>
+                    <a class="order" href="order.html"><span>Корзина</span></a>
+                    <a class="contacts" href="contacts.html"><span>Контакты</span></a>
+                </nav>
+    
+                <div class="right_header">
+                    <span>8-800-888-88-88</span>
+                    <button>Заказать звонок</button>
+                </div>
+                <div class="burger">
+                    <img src="./images/burger.png" alt="">
+                </div>
+            </div>
+        </header>
+        
+        <main class="catalog">
+            <section class="container">
+                <aside>
+                    <nav class="accordion">
+                        <h3>Каталог <span></span></h3>
+                        
+                        <ul>
+                            <li class="level1">
+                                <a class="kyx" data-type="kyx" href="#">Кухня</a>
+                                
+                                <span></span>
+                                
+                                <ul>
+                                    <li class="level2">
+                                        <a class="posyda" data-item="posyda" href="#">Посуда</a>
+                                        
+                                        <span></span>
+                                        
+                                        <ul>
+                                            <li class="level3">
+                                                <a data-miska="miska" class="miska" data-type="miska" href="#">Миски</a>
+                                            </li>
+                                            
+                                            <li class="level3">
+                                                <a href="#">Тарелки</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="level2">
+                                        <a href="#">Хранение</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            
+                            <li class="level1">
+                                <a data-type="zerkalo" class="zerkalo" href="#">Зеркала</a>
+                                
+                                <span></span>
+                                
+                                <ul>
+                                    <li class="level2">
+                                        <a href="#">Большие</a>
+                                    </li>
+                                    
+                                    <li class="level2">
+                                        <a href="#">Маленькие</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            
+                            <li class="level1">
+                                <a class="mebel" data-type="mebel" href="#">Мебель</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                
+                <article>
+                    <button type="button" class="changeview"></button>
+                    
+                    <h1>Товары в нашем магазине</h1>
+                    
+                    <div class="catalog_content">
+                        <div data-type="kyx"  class="catalog_item idtovar" data-tovarid="789">
+                            <img src="./images/catalog/image01.jpg" alt="jar">
+                            <h4 class="tovarname">Банки с крышкой и поднос, 5шт.</h4>
+                            <p>Банки помогут организовать удобное хранение.</p>
+                            <div class="price">100</div>
+                            <div class="item_shadow">
+                                <a href="product.html">Смотреть</a>
+                                <button type="button">Купить</button>
+                            </div>
+                        </div>
+                        
+                        <div data-miska="miska"  data-item="posyda" data-type="kyx" class="catalog_item idtovar" data-tovarid="123">
+                            <img src="./images/catalog/bowl.jpg" alt="bowl">
+                            <h4 class="tovarname">Миска</h4>
+                            <p>Идеальна для подачи салатов из овощей или фруктов. Можно использовать в качестве вазы для орехов.</p>
+                            <div class="price">90</div>
+                            <div class="item_shadow">
+                                <a href="#">Смотреть</a>
+                                <button type="button">Купить</button>
+                            </div>
+                        </div>
+                        
+                        <div data-item="posyda" data-type="kyx" class="catalog_item idtovar" data-tovarid="456">
+                            <img src="./images/catalog/plate.jpg" alt="plate">
+                            <h4 class="tovarname">Тарелка</h4>
+                            <p>Прекрасная деревянная тарелка, большая и плоская. Отлично впишется в интерьер в стиле рустик.</p>
+                            <div class="price">50</div>
+                            <div class="item_shadow">
+                                <a href="#">Смотреть</a>
+                                <button type="button">Купить</button>
+                            </div>
+                        </div>
+                        
+                        <div data-type="zerkalo" class="catalog_item idtovar" data-tovarid="333">
+                            <img src="./images/catalog/mirror.jpg" alt="mirror">
+                            <h4 class="tovarname">Зеркало</h4>
+                            <p>Замечательное зеркало. Большое, в минималистичном стиле. Показывает вас во всей красе.</p>
+                            <div class="price">10</div>
+                            <div class="item_shadow">
+                                <a href="product.html">Смотреть</a>
+                                <button type="button">Купить</button>
+                            </div>
+                        </div>
+                        
+                        <div data-type="mebel" class="catalog_item idtovar" data-tovarid="444">
+                            <img src="./images/catalog/bed.jpg" alt="bed">
+                            <h4 class="tovarname">Кровать</h4>
+                            <p>Удобная, мягкая, большая, почти ваша.</p>
+                            <div class="price">120</div>
+                            <div class="item_shadow">
+                                <a href="product.html">Смотреть</a>
+                                <button type="button">Купить</button>
+                            </div>
+                        </div>
+                        
+                        <div data-type="mebel" class="catalog_item idtovar" data-tovarid="555">
+                            <img src="./images/catalog/taburet.jpg" alt="taburet">
+                            <h4 class="tovarname">Табурет</h4>
+                            <p>Отличное приспособление для детей и коротышек.</p>
+                            <div class="price">150</div>
+                            <div class="item_shadow">
+                                <a href="product.html">Смотреть</a>
+                                <button type="button">Купить</button>
+                            </div>
+                        </div>
+                        
+                        <div data-type="mebel" class="catalog_item idtovar" data-tovarid="666">
+                            <img src="./images/catalog/shkaf1.jpg" alt="shkaf">
+                            <h4 class="tovarname">Шкаф простой</h4>
+                            <p>Маленький шкаф. Ничего не влезет, лучше сразу берите два.</p>
+                            <div class="price">180</div>
+                            <div class="item_shadow">
+                                <a href="product.html">Смотреть</a>
+                                <button type="button">Купить</button>
+                            </div>
+                        </div>
+                        
+                        <div data-type="mebel" class="catalog_item idtovar" data-tovarid="888">
+                            <img src="./images/catalog/shkaf2.jpg" alt="shkaf">
+                            <h4 class="tovarname">Большой шкаф</h4>
+                            <p>Огромный шкаф, хватит на всю семью. Отлично будет смотреться в коридоре или гардеробной.</p>
+                            <div class="price">190</div>
+                            <div class="item_shadow">
+                                <a href="product.html">Смотреть</a>
+                                <button type="button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="container">
+                <div class="top"></div>
+                <nav class="bottommenu">
+                    <a class="home current" href="index.html"><span>Главная</span></a>
+                    <a class="catalog" href="catalog.html"><span>Каталог</span></a>
+                    <a class="product" href="product.html"><span>Товар</span></a>
+                    <a class="order" href="order.html"><span>Корзина</span></a>
+                    <a class="contacts" href="contacts.html"><span>Контакты</span></a>
+                </nav>
+                <p class="copy">&copy; Юлия Перелыгина, 2023 год.</p>
+            </div>
+        </footer>
+        <div class="menu__burger">
+            <div class="burger__close">X</div>
+            <div class="wrapper__burger">
+                <a class="home current" href="index.html"><span>Главная</span></a>
+                <a class="catalog" href="catalog.html"><span>Каталог</span></a>
+                <a class="product" href="product.html"><span>Товар</span></a>
+                <a class="order" href="order.html"><span>Корзина</span></a>
+                <a class="contacts" href="contacts.html"><span>Контакты</span></a>
+            </div>
+        </div>
+        <script src="js/jquery-3.7.0.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+    
+    </html>

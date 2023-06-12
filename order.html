@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Project Product Page</title>
+        
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- <link rel="stylesheet" href="css/jquery-ui.min.css"> -->
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="js/jquery-3.7.0.min.js"></script>
+        
+        <!-- <script src="js/jquery-ui.min.js"></script> -->
+        
+     
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                <img src="./images/main/Clickhouselogo.svg" alt="logo">
+                <nav class="topmenu">
+                    <a class="home current" href="index.html"><span>Главная</span></a>
+                    <a class="catalog" href="catalog.html"><span>Каталог</span></a>
+                    <a class="product" href="product.html"><span>Товар</span></a>
+                    <a class="order" href="order.html"><span>Корзина</span></a>
+                    <a class="contacts" href="contacts.html"><span>Контакты</span></a>
+                </nav>
+    
+                <div class="right_header">
+                    <span>8-800-888-88-88</span>
+                    <button>Заказать звонок</button>
+                </div>
+                <div class="burger">
+                    <img src="./images/burger.png" alt="">
+                </div>
+            </div>
+        </header>
+        
+        <main class="order">
+            <section class="container2">
+                <h1>Корзина</h1>
+                
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="index">#</th>
+                            <th scope="col" class="name">Название</th>
+                            <th scope="col" class="qty">Количество</th>
+                            <th scope="col" class="price">Цена</th>
+                            <th scope="col" class="sum">Сумма</th>
+                            <th scope="col" class="delete">Удалить</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <!-- список товаров генерим на лету -->
+                    </tbody>
+                    
+                    <tfoot>
+                        <tr>
+                            <th scope="col" class="index"></th>
+                            <th scope="col" class="allsum" colspan="5">
+                                Итого:
+                                <span></span>
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            
+            <section class="container2">
+                <form name="orderform">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mail" class="form-label">Ваша почта</label>
+                        <input type="text" class="form-control" id="mail" name="mail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Ваш телефон</label>
+                        <input type="text" class="form-control" id="phone" name="phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="addr" class="form-label">Ваш адрес</label>
+                        <input type="text" class="form-control" id="addr" name="addr">
+                    </div>
+                    <label for="date" class="form-label">Желаемая дата доставки</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="date" name="date" readonly>
+                        <button class="btn btn-outline-secondary icon" id="datepicker" type="button">&#xe909;</button>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comm" class="form-label">Комментарий</label>
+                        <textarea class="form-control" id="comm" name="comm" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="agree" name="agree" checked>
+                        <label class="form-check-label" for="agree">Согласен на обработку моих персональных данных</label>
+                    </div>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-primary submit">Оформить заказ</button>
+                    </div>
+                </form>
+            </section>
+            
+            <section class="container empty">
+                <h1>Ваша корзина пуста</h1>
+                <p>Выберите товары в каталоге</p>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="container">
+                <div class="top"></div>
+                <nav class="bottommenu">
+                    <a class="home current" href="index.html"><span>Главная</span></a>
+                    <a class="catalog" href="catalog.html"><span>Каталог</span></a>
+                    <a class="product" href="product.html"><span>Товар</span></a>
+                    <a class="order" href="order.html"><span>Корзина</span></a>
+                    <a class="contacts" href="contacts.html"><span>Контакты</span></a>
+                </nav>
+                <p class="copy">&copy; Юлия Перелыгина, 2023 год.</p>
+            </div>
+        </footer>
+        <div class="menu__burger">
+            <div class="burger__close">X</div>
+            <div class="wrapper__burger">
+                <a class="home current" href="index.html"><span>Главная</span></a>
+                <a class="catalog" href="catalog.html"><span>Каталог</span></a>
+                <a class="product" href="product.html"><span>Товар</span></a>
+                <a class="order" href="order.html"><span>Корзина</span></a>
+                <a class="contacts" href="contacts.html"><span>Контакты</span></a>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.min.js"></script>
+        
+        <script src="js/datepicker.js"></script>
+        
+        <script src="js/main.js"></script>
+    </body>
+    
+    </html>
