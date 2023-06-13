@@ -127,6 +127,13 @@ h1 {
 /* header */
 header .top {
     height: 30px;
+    text-align: center;
+}
+
+p.valute {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 34px;
 }
 header .middle {
     height: 30px;
@@ -982,7 +989,6 @@ button.c_button {
     width: 940px;
     margin: 100px auto;
 }
-
 
 .input-group .btn {
     position: absolute;
